@@ -59,41 +59,10 @@ class EFP_Display {
 		
 		switch( $display ){
 			case 'gallery':
-				echo $this->get_gallery( $display , $display_ar );
+				include EFPMINISTRYDIR . '/inc/inc-display-gallery.php';
 				break;
 			
 		}; // end switch
-		
-	}
-	
-	public function get_gallery( $display , $display_ar ){
-		
-		$img = ( ! empty( $display_ar['img'] ) ) ? ' has-image' : '';
-		
-		$html = '<ul class="gallery' . $img . ' ' . $display_ar['post_type'] . '">';
-		
-		if ( ! empty( $display_ar['img'] ) ){
-	
-			$html .= '<li class="image-wrapper">' . $display_ar['img'] . '</li>';
-			
-		}
-		
-		$html .= '<li class="caption">';
-		
-    	if ( ! empty( $display_ar['title'] ) ){
-			
-    		$html .= '<h4>' . $display_ar['title'] . '</h4>';
-		
-		}
-        
-		if ( ! empty( $display_ar['excerpt'] ) ){
-			
-    		$html .= '<span class="excerpt">' . $display_ar['excerpt'] .'</span>';
-		}
-		
-    	$html .= '</li></ul>';
-		
-		return $html;
 		
 	}
 	

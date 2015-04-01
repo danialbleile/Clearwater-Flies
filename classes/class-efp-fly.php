@@ -34,13 +34,9 @@ class EFP_Fly {
 	
 	public function add_edit_form( $post ){
 		
-		if ( 'fly' == $post->post_type ){
+		$this->get_fly_from_meta( $post );
 		
-			$this->get_fly_from_meta( $post );
-			
-			include EFPMINISTRYDIR . '/inc/inc-form-fly.php';
-		
-		} // end if
+		include EFPMINISTRYDIR . '/inc/inc-form-fly.php';
 		
 	}
 	

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Clearwater Flies | Bringing Opportunity Across the World</title>
+<title>Untitled Document</title>
 <?php wp_head();?>
 </head>
 

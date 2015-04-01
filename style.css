@@ -82,14 +82,9 @@ main > section {
 	min-height: 500px;
 	top: 0;
 	background-color: #222;
-	background-image:url(images/site_background.jpg);
+	background-image: url(images/background-1.jpg);
 	background-size: cover;
-	background-position: bottom center;
-}
-
-#page-banner .banner-inner img{
-	margin-left: -20px;
-	margin-top: 1rem;
+	background-position: center center;
 }
 
 /*
@@ -193,13 +188,8 @@ main > section {
 }
 
 #contact-us h3,
-#contact-us p,
-#contact-us .message {
+#contact-us p {
 	margin: 0.5rem 1.5rem;
-}
-
-#contact-us .message {
-	color: #03F;
 }
 
 #contact-us input {
@@ -211,10 +201,6 @@ main > section {
 #contact-us textarea {
 	border-radius: 3px;
 	width: 100%;
-}
-
-#contact-us textarea {
-	height: 100px;
 }
 
 
@@ -236,7 +222,7 @@ main > section {
 
 ul.gallery {
 	background: #eee;
-	/*border: 1px solid #ddd;*/
+	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 5px 0;
 }
