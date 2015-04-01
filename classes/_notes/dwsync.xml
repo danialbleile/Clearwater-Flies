@@ -3,4 +3,7 @@
 <file name="class-efp-fly.php" server="ftp.clearwaterflies.com" local="130682555510086352" remote="130682663400000000" Dst="1" />
 <file name="class-efp-display.php" server="ftp.clearwaterflies.com" local="130682569379337557" remote="130682677200000000" Dst="1" />
 <file name="class-efp-post.php" server="ftp.clearwaterflies.com" local="130682567256442534" remote="130682674800000000" Dst="1" />
+<file name="class-efp-post.php" server="ftp.clearwaterflies.com//clearwaterfliescom/wp-content/themes/flies/" local="130723652390282598" remote="130682638800000000" Dst="2" />
+<file name="class-efp-display.php" server="ftp.clearwaterflies.com//clearwaterfliescom/wp-content/themes/flies/" local="130723652392834306" remote="130682641200000000" Dst="2" />
+<file name="class-efp-fly.php" server="ftp.clearwaterflies.com//clearwaterfliescom/wp-content/themes/flies/" local="130723652392854319" remote="130682627400000000" Dst="2" />
 </dwsync>
