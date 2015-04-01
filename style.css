@@ -1,0 +1,330 @@
+/*
+Theme Name: Ministry
+Theme URI: http://efreepalouse.org
+Author: Danial Bleile
+Author URI: http://wordpress.org/
+Description: This is a theme.
+Version: 0.0.1
+License: All rights reserved
+*/
+
+@import url( http://fonts.googleapis.com/css?family=Open+Sans );
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4rem;
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
+h1 {
+	margin: 0.5rem 0 0.25rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 1rem 0 2rem;
+}
+
+img {
+	border: none;
+}
+
+main.has-sidebar {
+	margin-right: 250px;
+}
+
+aside#sidebar {
+	padding: 2rem 1rem 3rem;
+}
+
+main > section {
+	padding: 2rem 3rem 3rem 0rem;
+}
+
+.content-wrap {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+#binder {
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*
+ * Global Header Bar
+*/
+#global-header-bar { 
+	min-height: 2rem;
+	background-color: rgba( 0 , 0, 0, 0.7 );
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+/*
+ * Page Banner
+*/
+#page-banner { 
+	overflow: hidden;
+}
+
+#page-banner .banner-inner {
+	position: relative;
+	min-height: 500px;
+	top: 0;
+	background-color: #222;
+	background-image: url(images/background-1.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+/*
+ * Global Nav
+*/
+#global-nav {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+}
+
+#global-nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+#global-nav li{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#global-nav a {
+	display: inline-block;
+	padding: 1rem 3rem;
+	background: #eee; 
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	color: #555;
+	border-radius: 3px 3px 0 0;
+}
+
+#global-nav li.current-menu-item a {
+	background: #fff; 
+}
+/*
+ * sidebar
+*/
+#sidebar {
+	float: right;
+	width: 250px;
+}
+
+/*
+ * front-page-summary
+*/
+#front-page-summary {
+	padding: 3rem 0;
+}
+
+#front-page-summary h1 {	
+	display: block;
+	width: 300px;
+	float: left;
+	margin: 0;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #777;
+	line-height: 1.8rem;
+	text-transform: uppercase;
+}
+
+#front-page-summary article {	
+	margin-left: 320px;
+	border-left: 1px solid #777;
+	padding-left: 20px;
+}
+
+
+/*
+ * front-page-more
+*/
+#our-patterns {
+	width: 67.5%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 2.5%;
+}
+
+#our-patterns > ul {
+	width: 31.33%;
+	display: inline-block;
+	margin: 0 2% 1rem 0;
+	vertical-align: top;
+}
+
+
+/*
+ * contact us
+*/
+#contact-us {
+	background: #eee;
+	padding: 1rem 0 2rem;
+	border-radius: 4px;
+}
+
+.is-front-page #contact-us {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#contact-us h3,
+#contact-us p {
+	margin: 0.5rem 1.5rem;
+}
+
+#contact-us input {
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
+
+#contact-us input[type=text],
+#contact-us textarea {
+	border-radius: 3px;
+	width: 100%;
+}
+
+
+/*
+ * gallery
+*/
+.gallery img {
+	display: block;
+	max-width: 100%;
+}
+
+.gallery,
+.gallery ul {
+	list-style-type: none;
+	padding: none;
+	margin: 0;
+	padding: 0; 
+}
+
+ul.gallery {
+	background: #eee;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 5px 0;
+}
+
+.gallery > li {
+	display: block;
+}
+
+.gallery > li img {
+	width: 94%;
+	margin: 0 auto;
+	display: block;
+}
+
+.gallery.three-up > li {
+	width: 31.33%;
+}
+
+.gallery .title a {
+	color: #006;
+	font-weight: bold;
+	padding: 0.25rem 0 0;
+	display: block;
+}
+
+.gallery > li.caption {
+	width: 90%;
+	margin: 0 auto;
+}
+.gallery .excerpt {
+	display: block;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	padding-bottom: 0.5rem;
+}
+.gallery h4 {
+	margin: 0;
+	padding: 0.25rem 0;
+}
+
+/*
+ * Page Layout
+*/
+.row {
+	margin: 1rem 0 2rem; 
+}
+
+.column > .column-inner-wrapper {
+	margin: 0 1rem;
+}
+/*
+ * Post Content
+*/
+.wp-caption {
+	border-radius: 3px;
+	background: #eee;
+	border: 1px solid #ddd;
+	padding: 5px 0;
+}
+
+.wp-caption.alignleft {
+	float: left;
+	margin-right: 1rem;
+}
+.wp-caption.alignright {
+	float: right;
+	margin-left: 1rem;
+}
+
+.wp-caption p,
+.wp-caption img {
+	float: left;
+	margin: 0 5px;
+}
+.wp-caption p {
+	padding: 0.5rem 0.5rem 0.25rem;
+	font-size: 0.8rem;
+}
+/*
+ * Buttons
+*/
+.action-button {
+	display: block;
+	background: #036;
+	border-bottom: 1px solid #003;
+	border-top: 1px solid #069;
+	border-radius: 3px;
+	margin-bottom: 2rem;
+	color: #ccc;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 0 1rem 0 2rem;
+	position: relative;
+	height: 55px;
+	line-height: 56px;
+}
+.action-button:after {
+	content: "";
+	border-bottom: 28px solid transparent;
+	border-top: 28px solid transparent;
+	border-left: 15px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
