@@ -10,8 +10,29 @@ jQuery(document).ready(function( $ ){
 		
 		banner.css( 'top', b_scr + 'px' );
 		
-		
 	}); // end window scroll
+	
+	$( '#contact-us-form' ).on( 'submit' , function( event ) {
+		
+		event.preventDefault();
+		
+		form = $( this );
+		
+		var input = form.serialize();
+		
+		$.post(
+			form.attr('action'),
+			input,
+			function( data ){
+				
+				form.find('.message').html( data );
+				
+				form.find( 'input, textarea' ).not( '.submit' ).val('');
+				
+			} 
+		);
+		
+	});
 	
 	
 }); // end document ready
